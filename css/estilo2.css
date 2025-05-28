@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../imagens/imagem\ fundo.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Reduzindo a opacidade para deixar a imagem mais visível */
+    z-index: 0;
+}
+header h1, header nav {
+    position: relative;
+    z-index: 2;
+}
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #5c6ef8; /* Cor de destaque ao passar o mouse */
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff; /* Fundo branco sólido para maior contraste */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+    width: 90%;
+    max-width: 500px;
+}
+
+  h2 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 24px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2563eb;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #f8fafc;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1d4ed8;
+  }
+
+  @media (max-width: 500px) {
+    .contact-container {
+      padding: 24px;
+    }
+  }
+    .footer {
+        margin-top: 50px;
+        background-color: #1e293b;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        font-size: 16px;
+    }

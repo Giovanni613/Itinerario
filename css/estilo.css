@@ -1,0 +1,365 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbff;
+    color: #1a1a1a;
+  }
+  header {
+    background-color: #edf2ff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparência */
+    z-index: 1;
+  }
+  
+  header h1, header nav {
+    position: relative;
+    z-index: 2;
+  }
+  header h1 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 50px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaf0ff;
+  }
+  .hero h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .hero h2 span {
+    color: #5c6ef8;
+  }
+  .hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #5c6ef8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  .content img {
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .topics ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  .footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer .logo h3 {
+    font-size: 24px;
+    color: #5c6ef8;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #ddd;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+  }
+  span{
+    color: #5c6ef8;
+  }
+  a{
+    text-decoration: none;
+
+  }
+  .sessao-combinada {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .sessao-combinada .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding-left:70px;
+  }
+  
+  .sessao-combinada .content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sessao-combinada .content div {
+    text-align: center;
+  }
+  .desafio-e-solucao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f9fbff;
+  }
+  
+  .desafio-e-solucao .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    gap: 20px;
+  }
+  
+  .desafio-e-solucao .content img {
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desafio-e-solucao .content div {
+    max-width: 600px;
+  }
+  
+  .desafio-e-solucao h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .desafio-e-solucao h4 {
+    font-size: 20px;
+    color: #5c6ef8;
+  }
+  
+  .desafio-e-solucao p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .integrantes {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9fbff;
+  }
+  
+  .integrantes h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  .gamificacao {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9fbff;
+  }
+  
+  .gamificacao h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .quadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .quadro {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  
+  .quadro h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2563eb;
+  }
+  
+  .quadro p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .principais-objetivos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9fbff;
+  }
+  
+  .principais-objetivos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .objetivos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .objetivo {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+  }
+  
+  .objetivo img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .objetivo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2563eb;
+  }
+  
+  .objetivo p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
